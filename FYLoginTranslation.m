@@ -61,7 +61,7 @@
         [self.containerView addSubview:self.animationView];
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext]*0.6 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
-            toVC.view.alpha = 0.7;
+            toVC.view.alpha = 1;
             self.animationView.backgroundColor = self.btnView.backgroundColor;
             self.animationView.layer.transform = fina3D;
         } completion:^(BOOL finished) {
@@ -69,7 +69,6 @@
         }];
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext]*0.3 delay:[self transitionDuration:transitionContext]*0.6 options:(UIViewAnimationOptionCurveEaseOut) animations:^{
-            toVC.view.alpha = 1;
             self.animationView.frame = _originRect;
             
         } completion:^(BOOL finished) {

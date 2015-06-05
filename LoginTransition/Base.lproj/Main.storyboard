@@ -16,18 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMh-oN-wsh">
-                                <rect key="frame" x="105" y="397" width="104" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-Lz-cdU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMh-oN-wsh">
+                                <rect key="frame" x="34" y="468" width="253" height="41"/>
                                 <color key="backgroundColor" red="1" green="0.31766119459999997" blue="0.18416306290000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="VKE-1K-dV3"/>
+                                    <constraint firstAttribute="width" constant="253" id="h4q-hP-rne"/>
+                                </constraints>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pressBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qpA-LA-Wfq"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4GQ-gM-ItI">
+                                <rect key="frame" x="34" y="118" width="253" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Passwd" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="blV-E8-J0n">
+                                <rect key="frame" x="34" y="167" width="253" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="JMh-oN-wsh" secondAttribute="centerX" id="EdM-tH-jyF"/>
+                            <constraint firstAttribute="trailing" secondItem="c7G-Lz-cdU" secondAttribute="trailing" id="PjW-cm-cQK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JMh-oN-wsh" secondAttribute="bottom" constant="59" id="gWP-7P-vIN"/>
+                            <constraint firstItem="c7G-Lz-cdU" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="osx-Ae-MYf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="c7G-Lz-cdU" secondAttribute="bottom" id="pqW-CX-HNz"/>
+                            <constraint firstItem="c7G-Lz-cdU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xop-3v-qmK"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -38,4 +69,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.jpg" width="1600" height="1280"/>
+    </resources>
 </document>

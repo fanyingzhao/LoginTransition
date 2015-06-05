@@ -14,10 +14,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIt-9N-W95">
-                    <rect key="frame" x="113" y="295" width="95" height="30"/>
-                    <color key="backgroundColor" red="0.82745098039999998" green="0.90588235289999997" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Rmt-wX-Qsh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIt-9N-W95">
+                    <rect key="frame" x="0.0" y="513" width="320" height="55"/>
+                    <color key="backgroundColor" red="1" green="0.31766119459999997" blue="0.18416306290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Jzr-mf-sNQ"/>
+                    </constraints>
+                    <state key="normal" title="back">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -26,7 +33,19 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.63049596969999999" green="1" blue="0.44961437209999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SIt-9N-W95" secondAttribute="trailing" id="1re-WZ-veN"/>
+                <constraint firstItem="SIt-9N-W95" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9cy-bc-tPh"/>
+                <constraint firstItem="Rmt-wX-Qsh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UTL-PQ-PYe"/>
+                <constraint firstAttribute="bottom" secondItem="Rmt-wX-Qsh" secondAttribute="bottom" id="a1M-iU-c7V"/>
+                <constraint firstAttribute="trailing" secondItem="Rmt-wX-Qsh" secondAttribute="trailing" id="eBw-oT-paJ"/>
+                <constraint firstItem="Rmt-wX-Qsh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jSF-3s-AkO"/>
+                <constraint firstAttribute="bottom" secondItem="SIt-9N-W95" secondAttribute="bottom" id="v7G-CM-pAY"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="login.jpg" width="640" height="1136"/>
+    </resources>
 </document>

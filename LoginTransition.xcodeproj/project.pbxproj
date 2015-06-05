@@ -17,6 +17,8 @@
 		D1B1A4161B2138F800CC6C3B /* FYLoginTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A4151B2138F800CC6C3B /* FYLoginTranslation.m */; };
 		D1B1A41A1B21393A00CC6C3B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A4181B21393A00CC6C3B /* SecondViewController.m */; };
 		D1B1A41B1B21393A00CC6C3B /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A4191B21393A00CC6C3B /* SecondViewController.xib */; };
+		D1B1A41D1B21A5E200CC6C3B /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A41C1B21A5E200CC6C3B /* background.jpg */; };
+		D1B1A4231B21B32300CC6C3B /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A4221B21B32300CC6C3B /* login.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		D1B1A4171B21393A00CC6C3B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		D1B1A4181B21393A00CC6C3B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D1B1A4191B21393A00CC6C3B /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		D1B1A41C1B21A5E200CC6C3B /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		D1B1A4221B21B32300CC6C3B /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		D1B1A3E21B2138EB00CC6C3B = {
 			isa = PBXGroup;
 			children = (
+				D1B1A41C1B21A5E200CC6C3B /* background.jpg */,
+				D1B1A4221B21B32300CC6C3B /* login.jpg */,
 				D1B1A4141B2138F800CC6C3B /* FYLoginTranslation.h */,
 				D1B1A4151B2138F800CC6C3B /* FYLoginTranslation.m */,
 				D1B1A3ED1B2138EB00CC6C3B /* LoginTransition */,
@@ -213,9 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1B1A41B1B21393A00CC6C3B /* SecondViewController.xib in Resources */,
+				D1B1A41D1B21A5E200CC6C3B /* background.jpg in Resources */,
 				D1B1A3FA1B2138EB00CC6C3B /* Main.storyboard in Resources */,
 				D1B1A3FF1B2138EB00CC6C3B /* LaunchScreen.xib in Resources */,
 				D1B1A3FC1B2138EB00CC6C3B /* Images.xcassets in Resources */,
+				D1B1A4231B21B32300CC6C3B /* login.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +440,7 @@
 				D1B1A4101B2138EB00CC6C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1B1A4111B2138EB00CC6C3B /* Build configuration list for PBXNativeTarget "LoginTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +449,7 @@
 				D1B1A4131B2138EB00CC6C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

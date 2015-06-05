@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.login = [[FYLoginTranslation alloc] initWithView:self.btn];
+   
 }
 
 - (void)finishTransition
@@ -40,6 +40,14 @@
     [self presentViewController:secondVC animated:YES completion:nil];
     
     [self performSelector:@selector(finishTransition) withObject:nil afterDelay:2];
+}
+
+- (FYLoginTranslation *)login
+{
+    if (!_login) {
+        _login = [[FYLoginTranslation alloc] initWithView:self.btn];
+    }
+    return _login;
 }
 
 #pragma mark UIViewControllerTransitioningDelegate
